@@ -1,9 +1,12 @@
 <?php
 // routes/api.php
 
-// Get the current URL path
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $method = $_SERVER['REQUEST_METHOD'];
+
+// Remove base path if running in subfolder
+$basePath = '/test/store-api-php/public';
+$requestUri = str_replace($basePath, '', $requestUri);
 
 // Routing logic
 switch (true) {
