@@ -38,7 +38,7 @@ store-api-php/
 
 1. **Clone the repository**:
    ```
-   git clone https://github.com/yourusername/store-api-php.git
+   git clone https://github.com/yourusername/test.git
    ```
 
 2. **Database Setup**:
